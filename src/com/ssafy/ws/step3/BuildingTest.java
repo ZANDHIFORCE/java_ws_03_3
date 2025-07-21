@@ -8,6 +8,6 @@ public class BuildingTest {
 	public static void main(String[] args) throws Exception{
 		// 코드를 작성해주세요.
 		System.out.println(123);
-		
+		//
 	}
 }
