@@ -45,10 +45,12 @@ public class BuildingTest {
 					if(green==false){
 						bNum = 1;
 						for(int[] d:d4) {
-							for(int b=1; !(i+d[0]*b<0||j+d[1]*b<0||i+d[0]*b>=n||j+d[1]*b>=n) ; b++) {
+							for(int b=1;!(i+d[0]*b<0||j+d[1]*b<0||i+d[0]*b>=n||j+d[1]*b>=n); b++) {
 								int ni = i+d[0]*b;
 								int nj = j+d[1]*b;
-								if(map[ni][nj]=='B')
+								if(map[ni][nj]=='G')
+									break;
+								else {
 									bNum+=1;
 								}
 							}
